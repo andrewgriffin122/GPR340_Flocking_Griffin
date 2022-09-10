@@ -22,5 +22,5 @@ Vector2 CohesionRule::computeForce(const std::vector<Boid*>& neighborhood, Boid*
    
     cohesionForce = centerMass - boid->getPosition();
 
-    return cohesionForce.normalized();
+    return Vector2::normalized(cohesionForce);
 }

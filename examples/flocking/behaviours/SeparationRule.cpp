@@ -25,9 +25,7 @@ Vector2 SeparationRule::computeForce(const std::vector<Boid*>& neighborhood, Boi
         }
     }
 
-    separatingForce = Vector2::normalized(separatingForce);
-
-    return separatingForce;
+    return Vector2::normalized(separatingForce);
 }
 
 bool SeparationRule::drawImguiRuleExtra() {
