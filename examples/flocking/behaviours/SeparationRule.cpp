@@ -19,6 +19,7 @@ Vector2 SeparationRule::computeForce(const std::vector<Boid*>& neighborhood, Boi
             if (dist < boid->getDetectionRadius())
             {
                 Vector2 diff = position - neighborhood[i]->getPosition();
+                //divide to get force based on distance
                 diff /= dist;
                 separatingForce += diff;
             }

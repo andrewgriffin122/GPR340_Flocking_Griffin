@@ -14,7 +14,7 @@ Vector2 AlignmentRule::computeForce(const std::vector<Boid*>& neighborhood, Boid
         if (dist < boid->getDetectionRadius())
         {
             averageVelocity += neighborhood[i]->getVelocity();
-            total = 0;
+            total++;
         }
     }
     if(total != 0)
